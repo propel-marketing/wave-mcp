@@ -1,0 +1,42 @@
+{
+  "node_http_defaults": {
+    "node": "v20.20.2",
+    "requestTimeout": 300000,
+    "headersTimeout": 60000,
+    "keepAliveTimeout": 5000,
+    "timeout": 0,
+    "maxHeadersCount": null,
+    "maxHeaderSize": 16384
+  },
+  "source_excerpts": [
+    {
+      "path": "node_modules/@modelcontextprotocol/sdk/dist/esm/shared/protocol.js",
+      "sha256": "7ea9524fcde13f9bcb7ce4d1867fd28c7844b6311b43e3a816bb019a3b61e445",
+      "lines": {
+        "8": "export const DEFAULT_REQUEST_TIMEOUT_MSEC = 60000;"
+      }
+    },
+    {
+      "path": "node_modules/playwright-core/lib/coreBundle.js",
+      "sha256": "829521b67ed7be90c7d6d6098ff39f2241562d47e4ad7ccab13710924a56001d",
+      "lines": {
+        "9656": "    NET_DEFAULT_TIMEOUT = 3e4;"
+      }
+    },
+    {
+      "path": "node_modules/vitest/dist/chunks/coverage.DM_a_rWm.js",
+      "sha256": "e509f3cc1bd81ae6426265253fa926cbde02be5cebfe35b1df422017bffdca31",
+      "lines": {
+        "538": "\tresolved.testTimeout ??= resolved.browser.enabled ? 15e3 : 5e3;",
+        "539": "\tresolved.hookTimeout ??= resolved.browser.enabled ? 3e4 : 1e4;"
+      }
+    },
+    {
+      "path": "node_modules/vitest/dist/chunks/defaults.9aQKnqFk.js",
+      "sha256": "e500ba917d0d320a037b4ad92ae691462b50a939e21b1f98d0073c45d55466ab",
+      "lines": {
+        "58": "\tteardownTimeout: 1e4,"
+      }
+    }
+  ]
+}

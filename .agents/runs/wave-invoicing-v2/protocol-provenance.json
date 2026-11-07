@@ -1,0 +1,14 @@
+[
+  {
+    "source_copy": "/home/propel/projects/cypher/steel-cdp/generous-limits.md",
+    "destination": "generous-limits.md",
+    "sha256": "521444a6b902f97856e006a61d31ffe990a865de688dc403a6aea476fda325df",
+    "current_vault_freshness": "unverified; existing agency-supplied copy"
+  },
+  {
+    "source_copy": "/home/propel/projects/cypher/steel-cdp/orchestrating-cypher-projects.md",
+    "destination": "orchestrating-cypher-projects.md",
+    "sha256": "2cb2904b715efd2d470da04aacb753e5c10785d9230ff6bfb4e2557e371f7fc6",
+    "current_vault_freshness": "unverified; existing agency-supplied copy"
+  }
+]

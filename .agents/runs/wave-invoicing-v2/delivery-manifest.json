@@ -1,0 +1,22 @@
+{
+  "meaning": "local pre-audit planning artifact snapshot, not whole-runtime freeze or publication proof",
+  "files": {
+    ".agents/runs/wave-invoicing-v2/AGENT_SYSTEM.md": "86ee25de1f4ba325a2212c0e34ef1a5e95036d280debf4fb7b1797f9988bce9f",
+    ".agents/runs/wave-invoicing-v2/LIMITS.md": "7abf41dc8189a3812e466632c2937180b94fcc165e6ffe06592cf4a41debe223",
+    ".agents/runs/wave-invoicing-v2/adw-copy-manifest.json": "f6162c65126fdc1b81e60723c9fc86a9673fb8a488b3b75c0f9615aa71181b88",
+    ".agents/runs/wave-invoicing-v2/adw-provenance-audit.json": "b28b548681ec164aa664bd51580dad211a360911b3da655e1f2299745ad7991c",
+    ".agents/runs/wave-invoicing-v2/dependency-defaults.json": "c75e34e2cc10327bfffd1dbc46f29be82c49c80363871b70f5ed9ccf92456ef5",
+    ".agents/runs/wave-invoicing-v2/design/design-draft.md": "96776eca39f170198f75a54ce1b11e9cf5ed66d82ddf9cdb01a2e79c8c19954e",
+    ".agents/runs/wave-invoicing-v2/generous-limits.md": "521444a6b902f97856e006a61d31ffe990a865de688dc403a6aea476fda325df",
+    ".agents/runs/wave-invoicing-v2/inherited-test-case-baseline.json": "fcf5609eed77bb850e4706d61a14fe6af998d4c674c9f3f7ab75e4048d9fd16c",
+    ".agents/runs/wave-invoicing-v2/managed-plan-export.json": "abdb78d367e687940d0826758b324135198f636900f9d9966cea62ba1cd2f6df",
+    ".agents/runs/wave-invoicing-v2/npm-audit-baseline.json": "46b204385280aea1651a62fd9bf3054ab45f0060556729594ba96161809804c3",
+    ".agents/runs/wave-invoicing-v2/numeric-census.json": "1464b108733c27eb370320909d776933f969017e4aaa6ecc79bb15fc7e6ba49d",
+    ".agents/runs/wave-invoicing-v2/orchestrating-cypher-projects.md": "2cb2904b715efd2d470da04aacb753e5c10785d9230ff6bfb4e2557e371f7fc6",
+    ".agents/runs/wave-invoicing-v2/plan-registration.json": "fec4c51dffd315caf139fb58409ad676a29b8fc5f199cc876a6794bbf07aa205",
+    ".agents/runs/wave-invoicing-v2/plan-validation.json": "20ec3f596e3dc79be3722cd14a39c70046e9913833619e870afc0d938c81badb",
+    ".agents/runs/wave-invoicing-v2/protocol-provenance.json": "90fd66dacfa7ba7517c4a6548675cbd5a29ce78e8c309100e04e999c50113351",
+    ".agents/runs/wave-invoicing-v2/spec/universal-spec.md": "ab62f776ba4d75dd6ba3797d2ab090a4759b306cb5bf54aea0a7641d17f6d658",
+    ".agents/runs/wave-invoicing-v2/wave-invoicing-v2.md": "72579acc3ae9d5f6242fc6d109bddc8d998017b595ab52475fd2189d5949b8bc"
+  }
+}

@@ -1,0 +1,2432 @@
+[
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage reads the Auth0 email page as the identifier step",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage prefers the password step when a password field is showing",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage reads Wave's /auth/verify code boxes as the OTP step",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage is signed in only with a real cookie on a business URL",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage spots Cloudflare's block page before anything else",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage stops for a visible CAPTCHA even when a form field is showing",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage reports a visible error message",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "classifyPage waits while redirects are in flight",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/auth0-sign-in.test.ts",
+    "name": "SignInChallengeError tells the user how to sign in by hand",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "resolveBrowserLaunchTarget defaults to Playwright's bundled Chromium when no env override is set",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "resolveBrowserLaunchTarget returns the env path verbatim when WAVE_MCP_BROWSER_PATH points at an existing executable",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "resolveBrowserLaunchTarget returns null when WAVE_MCP_BROWSER_PATH is set but missing \u2014 does NOT silently fall back",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "resolveBrowserLaunchTarget ignores an empty WAVE_MCP_BROWSER_PATH and falls back to the bundled Chromium",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "browserProfileDir sits inside the config dir",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "parseBusinessIdFromUrl extracts the UUID from a next.waveapps.com path",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "parseBusinessIdFromUrl extracts even without a trailing slash",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "parseBusinessIdFromUrl returns undefined for non-Wave URLs",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "parseBusinessIdFromUrl returns undefined when the path is not a UUID",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "parseBusinessIdFromUrl returns undefined for null/empty URLs",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth returns null when there is no waveapps cookie",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth returns null when waveapps is empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth returns null when waveapps is the invalidated sentinel",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth returns auth + csrf + businessId when everything is present",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth csrf is undefined if not present (read-only sessions)",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth businessId is undefined when URL has no UUID",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/browser.test.ts",
+    "name": "extractWaveAuth empty csrf string is treated as undefined",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "configDir / credentialsPath honours WAVE_MCP_CONFIG_DIR",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "configDir / credentialsPath falls back to ~/.config/waveapps-mcp when env unset",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials round-trips authToken + csrfToken + businessId",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials round-trips email",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials never surfaces legacy plaintext secrets through readCredentials",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials reads old credential files (pre-new-fields) without errors",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials writes the file with 0600 permissions",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials tightens an existing looser file back to 0600",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials returns null when the file does not exist",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials returns null when authToken is missing from the file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials throws on JSON parse errors with a helpful path",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "writeCredentials / readCredentials handles optional fields when stored values are missing/wrong types",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "patchCredentials merges new fields into an existing file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "patchCredentials throws when no auth token exists and none is provided",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "migrateLegacySecrets moves a plaintext password and TOTP secret into the store and scrubs the file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "migrateLegacySecrets is a no-op when the file holds no secrets",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "migrateLegacySecrets is a no-op when there is no file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "migrateLegacySecrets leaves the file untouched when the store rejects a write",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "migrateLegacySecrets leaves the file alone for a read-only store",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "deleteCredentials returns true when a file existed and was removed",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "deleteCredentials returns false when there was nothing to delete",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "deleteCredentials rethrows non-ENOENT errors from rm",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "credentialsAgeSeconds returns a small number for a freshly-written file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "credentialsAgeSeconds returns null when the file is missing",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "signInEmail prefers WAVE_EMAIL over the stored email",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/credentials.test.ts",
+    "name": "signInEmail falls back to the stored email, then to nothing",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/profile-lock.test.ts",
+    "name": "withProfileLock holds the lock while fn runs and releases it afterwards",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/profile-lock.test.ts",
+    "name": "withProfileLock releases the lock when fn throws",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/profile-lock.test.ts",
+    "name": "withProfileLock runs callers one at a time",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/profile-lock.test.ts",
+    "name": "withProfileLock gives up after waitMs when the lock stays held",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/profile-lock.test.ts",
+    "name": "withProfileLock breaks a lock left over from a crashed run",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/refresh-session.test.ts",
+    "name": "refreshSession returns extracted auth from the driver result",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/refresh-session.test.ts",
+    "name": "refreshSession passes a working generateTotp function to the driver when totpSecret is set",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/refresh-session.test.ts",
+    "name": "refreshSession generateTotp returns null when no TOTP secret is stored",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/refresh-session.test.ts",
+    "name": "refreshSession throws when the driver result has no valid waveapps cookie",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/refresh-session.test.ts",
+    "name": "refreshSession rejects missing email or password before invoking the driver",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "secretStoreFromEnv uses the OS credential store when no file variable is set",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "secretStoreFromEnv uses the file store when either file variable is set, without loading the keyring",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore reads the file on every get, so a rotated secret takes effect",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore treats an empty file as no secret",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore names the variable and path when a file cannot be read",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore warns once, without the value, when a secret file is readable by other users",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore stays quiet for a 0600 file",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore refuses to write or delete, naming the variable to edit",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/secrets.test.ts",
+    "name": "fileSecretStore reports where each secret comes from",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "base32Decode decodes the empty-padded RFC 4648 example",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "base32Decode tolerates lowercase, whitespace, and missing padding",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "base32Decode throws on an invalid character",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "base32Decode throws on an empty secret",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 59 emits 94287082",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 1111111109 emits 07081804",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 1111111111 emits 14050471",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 1234567890 emits 89005924",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 2000000000 emits 69279037",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) at unix time 20000000000 emits 65353130",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) defaults to 6 digits / SHA-1 / 30s step",
+    "status": "passed"
+  },
+  {
+    "file": "src/auth/totp.test.ts",
+    "name": "totp (RFC 6238 SHA-1 test vectors) left-pads short codes with zeroes",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli returns handled=false when argv is empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes logout",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes whoami",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes refresh (which asks for save-password with nothing on file)",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli moves legacy plaintext secrets into the credential store before running a command",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes \"help\" to the help screen",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes \"--help\" to the help screen",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes \"-h\" to the help screen",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli exits 64 (usage) on an unknown subcommand",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/index.test.ts",
+    "name": "dispatchCli routes login (which exits NO_BROWSER without a real browser)",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin uses the global console + default deps when none are supplied",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin returns NO_BROWSER when the target resolver returns null",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin sends the browser to Wave's Auth0 sign-in and saves the captured cookies",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin names the WAVE_MCP_BROWSER_PATH browser it launches",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin returns FAILURE without launching when another sign-in holds the profile lock",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin returns TIMEOUT when the cookies never settle",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin returns FAILURE when launch throws",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin opens a new page when the browser starts with none",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "runLogin swallows a close() error after a successful login",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "STEALTH constants strips --enable-automation so Cloudflare does not flag us",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "STEALTH constants disables the AutomationControlled blink feature",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "waitForAuth requires the token to stay stable for stabilityMs",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "waitForAuth resets the stability window when the token changes",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/login.test.ts",
+    "name": "waitForAuth treats cookie() failures as no-auth and keeps polling",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/logout.test.ts",
+    "name": "runLogout removes the credentials file when present",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/logout.test.ts",
+    "name": "runLogout also removes the password and TOTP secret from the credential store",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/logout.test.ts",
+    "name": "runLogout is a no-op when no file exists",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/logout.test.ts",
+    "name": "runLogout leaves file-based secrets alone and says where they are",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/logout.test.ts",
+    "name": "runLogout uses the global console when no override is supplied",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste saves all three values when provided",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste saves auth-only when CSRF + business are blank",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste strips quotes + whitespace on every field",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste rejects non-UUID business IDs and saves without a default",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste aborts with NO_TOKEN when authToken is empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste falls back to the global console when no override is given (early exit path)",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/paste.test.ts",
+    "name": "runPaste warns about missing CSRF when only auth is provided",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh signs in with the stored secrets and saves the new token",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh moves legacy plaintext secrets out of credentials.json before signing in",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh asks for save-password when no password is stored",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh exits CHALLENGE when Wave needs a person",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh exits FAILURE on any other sign-in error",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh: the sign-in email uses WAVE_EMAIL over the stored email and saves it",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh: the sign-in email signs in on a fresh host from WAVE_EMAIL and creates credentials.json",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh: the sign-in email asks for the email in a terminal when none is on file, then saves it",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh: the sign-in email says how to supply the email when it cannot ask",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/refresh.test.ts",
+    "name": "runRefresh: the sign-in email does not ask for the email when there is no password to sign in with",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/sanitise.test.ts",
+    "name": "sanitise trims whitespace",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/sanitise.test.ts",
+    "name": "sanitise strips one pair of matching surrounding quotes",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/sanitise.test.ts",
+    "name": "sanitise leaves mismatched or inner quotes alone",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/sanitise.test.ts",
+    "name": "sanitise handles empty input",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation prints a boxed warning that mentions insecurity, 2FA, and includes \u26a0\ufe0f characters",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation renders every banner line at the same visual width as the top border",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation aborts with DECLINED when the user does not type y",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation treats \"\" as a decline",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation treats \"no\" as a decline",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation treats \"nope\" as a decline",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation treats \"maybe\" as a decline",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation treats \"?\" as a decline",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation accepts \"y\" as confirmation",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation accepts \"Y\" as confirmation",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation accepts \"yes\" as confirmation",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation accepts \"YES\" as confirmation",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword warning banner + confirmation skips the confirmation when options.skipConfirmation is true",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword email / password prompts stores email + password when 2FA is declined",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword email / password prompts uses askSecret (not ask) for the password prompt",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword email / password prompts falls back to the existing email when the user just hits Enter",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword email / password prompts refuses an empty password",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword email / password prompts refuses if no credentials.json exists yet (need login first)",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating does NOT ask for the TOTP secret when the user says they have no 2FA",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating asks for + stores TOTP secret when 2FA is enabled",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating rejects a malformed TOTP secret with BAD_TOTP",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating skips silently if the user opts in but pastes nothing",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating keeps an existing TOTP secret when the user opts in but pastes nothing",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword 2FA gating removes a stored TOTP secret when the user says 2FA is off",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword credential store never writes the password or TOTP secret into credentials.json",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword credential store reports STORE_FAILED and leaves credentials.json alone when the store rejects the write",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword secrets from files saves only the email and never asks for secrets",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/save-password.test.ts",
+    "name": "runSavePassword secrets from files sends a fresh host to refresh or WAVE_EMAIL rather than login",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/secret-line.test.ts",
+    "name": "SecretLineBuffer decodes multi-byte UTF-8 typed as separate bytes",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/secret-line.test.ts",
+    "name": "SecretLineBuffer backspace removes a whole code point, not one byte",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/secret-line.test.ts",
+    "name": "SecretLineBuffer backspace on an empty buffer is a no-op",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami shows WAVE_EMAIL as the sign-in email and says where it comes from",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami exits 1 with a hint when no credentials exist",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami prints masked token + businessId when credentials exist",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami reports stored secrets without printing them",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami says so when the credential store cannot be read",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami handles a short token without exposing it",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami falls back to the global console when no override is supplied",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami humanises ages in minutes / hours / days",
+    "status": "passed"
+  },
+  {
+    "file": "src/cli/whoami.test.ts",
+    "name": "runWhoami says when secrets come from files, without printing them",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders builds a Bearer header on every request",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders sets Accept: application/json",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders omits x-csrftoken on reads by default",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders adds x-csrftoken when mutating=true",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders throws when mutating without a CSRF token configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "authHeaders allows reads even without CSRF",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "loadAuth (env precedence) reads WAVE_AUTH_TOKEN",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "loadAuth (env precedence) reads WAVE_CSRF_TOKEN when present",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "loadAuth (env precedence) throws with a helpful message when neither env nor file is set",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "loadAuth (env precedence) falls back to the credentials file when env is unset",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/auth.test.ts",
+    "name": "loadAuth (env precedence) env beats the credentials file when both exist",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveError sets the name to WaveError",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveError propagates the cause",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveAuthError has a sensible default message and the right name",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveAuthError accepts a custom message",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveApiError captures status, url, body, and puts a body excerpt in the message",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveApiError keeps the plain message when the body is empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveApiError uses a string body as is and truncates long bodies",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveApiError honours an explicit message override",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveGraphQLError joins error messages into the summary line",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveGraphQLError details includes the extension code and path when present",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveMutationError lists each input error with its path and code",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "WaveMutationError says so when Wave gave no reason",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "requireDidSucceed returns the payload when didSucceed is true",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/errors.test.ts",
+    "name": "requireDidSucceed throws WaveMutationError when didSucceed is false or the payload is missing",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient POSTs to gql.waveapps.com/graphql/internal with the operation envelope",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient attaches x-csrftoken when a CSRF token is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient omits x-csrftoken when no CSRF is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveAuthError on 401",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveApiError on non-2xx non-auth status",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveGraphQLError when payload has errors[]",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveGraphQLError when data is undefined and no errors",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveAuthError when Wave answers 200 with an UNAUTHENTICATED error",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient surfaces Wave's messages as WaveGraphQLError when a 400 carries GraphQL errors",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient throws WaveApiError when a 200 body is not JSON",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 retries once when the refresher returns true",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 throws WaveAuthError when refresh succeeds but the retry still 401s",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 treats an UNAUTHENTICATED error on HTTP 200 as an expired session and retries",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 throws WaveAuthError when UNAUTHENTICATED persists after a refresh",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 throws WaveAuthError when no refresher is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient refresh-on-401 does not retry on non-auth errors (e.g. 500)",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/graphql.test.ts",
+    "name": "WaveGraphQLClient swallows a text() failure when reading an error body",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toGlobalId / fromGlobalId encodes Business:UUID as base64",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toGlobalId / fromGlobalId decodes the canonical Business global ID we captured from Wave",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toGlobalId / fromGlobalId round-trips arbitrary types",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toGlobalId / fromGlobalId throws on a malformed Relay ID",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toCompositeGlobalId / fromCompositeGlobalId produces the exact Customer composite ID Wave emits",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toCompositeGlobalId / fromCompositeGlobalId accepts numeric or string internal IDs",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toCompositeGlobalId / fromCompositeGlobalId round-trips composite IDs",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toCompositeGlobalId / fromCompositeGlobalId throws when there is no semicolon (not a Wave composite)",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "toCompositeGlobalId / fromCompositeGlobalId throws when child part is malformed",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid accepts canonical lower-case UUIDs",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid accepts upper-case hex",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid rejects too short",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid rejects no hyphens",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid rejects non-hex",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid rejects empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid assertUuid passes through on valid input",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/ids.test.ts",
+    "name": "isUuid / assertUuid assertUuid throws with the field name on invalid input",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient fromEnv requires WAVE_AUTH_TOKEN",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient constructs with explicit auth and exposes rest + gql",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessId returns the explicit argument if passed",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessId falls back to WAVE_BUSINESS_ID env when unset",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessId can be set via options",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessId throws when neither argument nor default is available",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessId rejects non-UUID values",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient constructor rejects an invalid WAVE_BUSINESS_ID",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient businessGlobalId returns the canonical Relay base64",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient default business id falls back to the credentials file when env unset",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient fromEnv pulls auth from the credentials file when env vars are absent",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook shares a single refresh promise across concurrent refresh attempts",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook fails with WaveAuthError when no email/password is on file and nothing new was saved",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook moves a legacy plaintext password into the store and wires a refresher",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook reuses a token another process already wrote instead of signing in again",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook picks up a session saved by `login` after startup, with no password stored",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook does not reuse an on-disk token it already saw at startup",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook fails with WaveAuthError when the email is on file but no password is in the store",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook returns false from refreshOnce when no refresher is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/index.test.ts",
+    "name": "WaveClient refresh hook logs and surfaces failures from the user-supplied refresher gracefully",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient get builds the correct URL with query params and returns parsed JSON",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient get normalises paths that already have a leading slash",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient get drops undefined and null query values",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient get omits the x-csrftoken header on reads",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient getPaged returns items + meta with X-Total-* headers parsed",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient getPaged defaults page=1, pageSize=25 when caller omits them",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient getPaged derives totalPages from X-Total-Count when Wave omits X-Total-Pages",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient getPaged handles missing X-Total-* headers as null",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient mutating verbs post attaches CSRF + content-type and serialises the body",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient mutating verbs patch sends a PATCH",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient mutating verbs put sends a PUT",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient mutating verbs delete returns void on 204",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient mutating verbs delete parses the body when status is non-204 and 2xx",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping throws WaveAuthError on 401",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping throws WaveAuthError on 403",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping throws WaveApiError with status/url/body on a 422",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping keeps non-JSON error bodies as a string",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping treats an empty 200 body as null",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient error mapping treats a non-numeric X-Total-Count header as null",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient refresh-on-401 retries the request once when the refresher returns true",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient refresh-on-401 still throws WaveAuthError when the refresh succeeds but the retry also 401s",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient refresh-on-401 throws WaveAuthError when no refresher is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient refresh-on-401 throws WaveAuthError when the refresher itself returns false",
+    "status": "passed"
+  },
+  {
+    "file": "src/client/rest.test.ts",
+    "name": "WaveRestClient refresh-on-401 uses a getAuth callable for each retry so the refreshed token is picked up",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_helpers.test.ts",
+    "name": "jsonResult returns text content with pretty-printed JSON",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_helpers.test.ts",
+    "name": "flattenConnection returns nodes from edges",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_helpers.test.ts",
+    "name": "flattenConnection returns [] for null/undefined connection",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_helpers.test.ts",
+    "name": "flattenConnection returns [] for an empty edges array",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_pdf.test.ts",
+    "name": "downloadPdf refuses a link that is not https",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_pdf.test.ts",
+    "name": "downloadPdf raises WaveApiError without the signed query string when the download fails",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_pdf.test.ts",
+    "name": "downloadPdf drops the bytes when the file is over the limit",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_report-export.test.ts",
+    "name": "reportToCsv mirrors Wave's export: title lines, a blank line before each section, rows padded to the section's width, quoted fields, CRLF",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_report-export.test.ts",
+    "name": "reportToCsv leaves the basis line out for reports without one",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_report-export.test.ts",
+    "name": "reportToPdf produces a titled, single-page portrait PDF for a narrow report",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_report-export.test.ts",
+    "name": "reportToPdf goes landscape for wide tables, paginates long ones and survives text Helvetica cannot encode",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeInvoiceSummary keeps the money, dates, status and a customer reference, drops the rest",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeInvoiceSummary tolerates a missing or non-object payload",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeInvoice adds the presentation fields, items, payments, discounts and attachments",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeInvoice is much smaller than the raw payload",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeInvoice gives empty lists and nulls for an empty object",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "looksLikeInvoice recognises an object with an invoice_number",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeBusiness keeps identity, currency, country and the verified sender addresses",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeProduct keeps pricing, flags and account references",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeProduct accepts bare integer default taxes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeAccount keeps what you need to pick a payment or income account",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeCustomer (GraphQL) flattens currency, province and country to codes and drops saved cards and __typename",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeCustomer (GraphQL) flattens shipping details when present",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeEstimate (GraphQL) keeps the estimate fields and decodes the integer id from the Relay id",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeEstimate (GraphQL) leaves internalId null when the id is not a composite Relay id",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeBill (GraphQL) keeps the money and vendor, drops payroll fields",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeReceipt (GraphQL) keeps the transaction basics and the attachment thumbnail",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeSalesTaxSummary (GraphQL) decodes the integer id and turns decimal-string rates into numbers",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeSalesTaxSummary (GraphQL) degrades to nulls on a malformed record",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/_shape.test.ts",
+    "name": "shapeEstimateRef (GraphQL) keeps id, decoded internal id, number and status",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/accounts.test.ts",
+    "name": "wave_list_accounts registers under its old name",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/accounts.test.ts",
+    "name": "wave_list_accounts hits /accounts/ with active_only and returns trimmed accounts",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/accounts.test.ts",
+    "name": "wave_list_accounts filters by accountType on the client side",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/accounts.test.ts",
+    "name": "wave_list_accounts returns an empty list when Wave sends something that is not an array",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/bills.test.ts",
+    "name": "registerBillTools registers wave_list_bills",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/bills.test.ts",
+    "name": "registerBillTools fires ListBills with defaults",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/bills.test.ts",
+    "name": "registerBillTools flows optional vendor + date filters",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/businesses.test.ts",
+    "name": "registerBusinessTools registers both business tools by name",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/businesses.test.ts",
+    "name": "registerBusinessTools wave_list_businesses GETs /businesses/ with include_personal and returns trimmed businesses",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/businesses.test.ts",
+    "name": "registerBusinessTools wave_get_business GETs /businesses/{uuid}/ and returns the trimmed business",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customer-statements.test.ts",
+    "name": "registerCustomerStatementTools creates an outstanding-invoices statement and returns its share link",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customer-statements.test.ts",
+    "name": "registerCustomerStatementTools defaults an account-activity statement to January 1 through today",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customer-statements.test.ts",
+    "name": "registerCustomerStatementTools sends from the default verified sender with a subject naming the business",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customer-statements.test.ts",
+    "name": "registerCustomerStatementTools skips the business read when sender and subject are given",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools registers list, get, create, update, delete customer tools",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_list_customers fires the verbatim Customer query and returns trimmed customers",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_list_customers search walks every page and filters by name or email, case-insensitively",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_list_customers search stops after ten pages and says so",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_create_customer builds the canonical input shape and returns the trimmed customer",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_create_customer throws WaveMutationError with Wave's reason when didSucceed is false",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_create_customer flows optional fields through",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_delete_customer encodes a composite Relay ID from integer customerId",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_delete_customer accepts an explicit Relay ID without rebuilding it",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_delete_customer rejects when neither id form is given",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "registerCustomerTools wave_delete_customer returns ok on success and throws on didSucceed: false",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "provinceCode turns a bare province into the ISO 3166-2 code Wave accepts",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "wave_get_customer and wave_update_customer wave_get_customer reads one customer by integer id",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "wave_get_customer and wave_update_customer wave_update_customer sends back the stored address and shipping details, which Wave would otherwise clear",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "wave_get_customer and wave_update_customer replaces additional contacts by deleting the stored ones and adding the new list",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "wave_get_customer and wave_update_customer skips the read when the full address and shipping details are given",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/customers.test.ts",
+    "name": "wave_get_customer and wave_update_customer surfaces a refused update as a WaveMutationError",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools registers the estimate lifecycle tools",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_get_estimate shapes the estimate with the fields wave_update_estimate takes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_get_estimate throws when the estimate is missing",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_approve_estimate sends the estimate id and returns the estimate",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_accept_estimate sends the estimate id and returns the estimate",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_reset_estimate_acceptance sends the estimate id and returns the estimate",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_duplicate_estimate sends the estimate id and returns the estimate",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools turns didSucceed: false into a WaveMutationError with Wave's reason",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_send_estimate leaves optional fields out and defaults ccMyself off",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_send_estimate forwards subject, message and sender when given",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_mark_estimate_sent defaults to MARKED_SENT and passes sentAt through",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_convert_estimate_to_invoice returns the integer invoice id the invoice tools take",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimate-lifecycle.test.ts",
+    "name": "registerEstimateLifecycleTools wave_get_estimate_pdf embeds the downloaded PDF without sending Wave credentials",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools registers list, create, update, delete tools",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_list_estimates fires GetEstimates with the fixed bucket statuses and returns one trimmed list",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_list_estimates sends a status filter as allStatus",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate encodes customerId and productId as composite Relay IDs",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate takes the next free number, the business currency and a 30-day validity when omitted",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate skips numbers that already exist when Wave sorts them as text",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate keeps zero padding",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate starts at 1 when there are no estimates and skips the reads when the caller supplies number and currency",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate asks for an explicit number when existing numbers are not integers",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools estimate mutations throw WaveMutationError with Wave's reason on didSucceed: false",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_create_estimate passes verbatim CreateEstimate mutation text",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_update_estimate sends PatchEstimate with the supplied global id and the business currency",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wraps line taxes as { salesTaxId } objects, composing integer IDs into SalesTax Relay IDs",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_update_estimate forwards a deposit unit and value when a deposit is enabled",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_update_estimate rejects an enabled deposit without unit and value",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_update_estimate drops deposit unit and value when deposits are disabled",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools rejects estimate statuses Wave no longer accepts",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/estimates.test.ts",
+    "name": "registerEstimateTools wave_delete_estimate sends the estimateId to the delete mutation",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/index.test.ts",
+    "name": "registerAllTools registers the full Wave MCP tool surface",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/index.test.ts",
+    "name": "registerAllTools marks every tool that emails someone as destructive, so clients ask before it runs",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools registers the invoice action tools",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools wave_get_invoice_pdf embeds the PDF from the signed link",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools wave_duplicate_invoice returns the copy as an integer invoice id",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools wave_send_invoice_reminder sends only the email fields it was given",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools wave_send_payment_receipt composes the InvoicePayment Relay id from the REST payment id",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoice-actions.test.ts",
+    "name": "registerInvoiceActionTools turns a refused reminder into a WaveMutationError",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "registerInvoiceTools registers the invoice tools (accounts and payments live elsewhere now)",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_list_invoices always embeds the customer and returns trimmed rows",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_list_invoices returns Wave's untouched page with raw: true",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_list_invoices returns an empty list when Wave sends something that is not an array",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_get_invoice asks for every embed, url-encodes the id and returns the trimmed invoice",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_get_invoice returns the raw invoice with raw: true",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_get_invoice_settings hits /invoices/settings/",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_create_invoice takes labels, memo, footer, terms and currency from the workspace when not supplied",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_create_invoice falls back to neutral labels and 15-day terms when the settings are empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_create_invoice skips the settings and business reads when everything is supplied, and defaults the date to the local today",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_create_invoice dates a due date from the invoice date and the workspace terms",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice reads the invoice and PATCHes the full state with only the supplied fields changed",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice keeps a draft a draft and lets status be set explicitly",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice does not read first when the caller supplies the full state",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice explains which field the stored invoice lacks instead of sending a broken body",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice carries discounts, attachments, tags and layout flags over from the stored invoice",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice accepts a supplied field even when the stored invoice lacks it",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice refuses to guess a missing status, exchange rate, quantity or line list",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_update_invoice prefers the line's own booked account over the product default",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "bodyArgsFromInvoice and hasFullState round-trips a shaped invoice into update arguments",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_approve_invoice PATCHes status=saved and returns the trimmed invoice",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_mark_invoice_sent PUTs mark-sent and returns the trimmed invoice when Wave sends one back",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_mark_invoice_sent passes through anything that is not an invoice",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_send_invoice encodes the invoice id as a composite Relay id, forwards the email fields and reports success",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_send_invoice throws WaveMutationError with Wave's reason when didSucceed is false",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_send_invoice is marked destructive: an email cannot be unsent",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/invoices.test.ts",
+    "name": "wave_delete_invoice DELETEs /invoices/{id}/",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/payments.test.ts",
+    "name": "registerPaymentTools registers both payment tools",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/payments.test.ts",
+    "name": "registerPaymentTools wave_record_invoice_payment POSTs the captured payment shape and returns the trimmed payment",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/payments.test.ts",
+    "name": "registerPaymentTools wave_record_invoice_payment defaults memo to null, exchange_rate to 1, the date to the local today and the method to bank_transfer",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/payments.test.ts",
+    "name": "registerPaymentTools wave_delete_invoice_payment DELETEs /payments/{paymentId}/ and url-encodes both ids",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools registers list, get, create, update, delete",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_list_products passes pagination + active filter to REST GET and returns trimmed products",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_list_products omits the active filter when activeOnly is false",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_list_products returns an empty list when Wave sends something that is not an array",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_get_product GETs /products/{id}/ and returns the trimmed product",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_create_product POSTs the captured shape with income_account wrapper when isSold",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_create_product includes expense_account when isBought + expenseAccountId provided",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_create_product forwards default_sales_taxes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_update_product only sends fields that the caller supplied",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_update_product wraps incomeAccountId in the { id } shape",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_update_product lets the caller null out expenseAccountId explicitly",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_update_product forwards active=false for archiving",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_update_product sends an empty body when no editable fields are supplied (no-op safe)",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/products.test.ts",
+    "name": "registerProductTools wave_delete_product DELETEs /products/{id}/ and reports ok",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/receipts.test.ts",
+    "name": "registerReceiptTools registers wave_list_receipts",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/receipts.test.ts",
+    "name": "registerReceiptTools fires GetTransactions with RECEIPT_CAPTURE filter and default sort",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/receipts.test.ts",
+    "name": "registerReceiptTools honours `first` and `sort` overrides",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/recurring-invoices.test.ts",
+    "name": "registerRecurringInvoiceTools lists with page_index paging and the filters Wave takes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/recurring-invoices.test.ts",
+    "name": "registerRecurringInvoiceTools gets one with line items and passes the schedule through",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools posts the period, basis and version Wave expects for profit and loss",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools sends an as-of date and no basis for the aged reports, and reads value grids",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools defaults a range report to January 1 of this year through today",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools wave_export_report runs the same report, names the business and embeds a CSV",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools wave_export_report embeds a PDF as base64 and says \"As of\" for point-in-time reports",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/reports.test.ts",
+    "name": "registerReportTools labels a headline figure by its key when Wave leaves the name empty",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/sales-taxes.test.ts",
+    "name": "registerSalesTaxTools registers wave_list_sales_taxes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/sales-taxes.test.ts",
+    "name": "registerSalesTaxTools lists active taxes with the integer id the invoice and estimate tools take",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/sales-taxes.test.ts",
+    "name": "registerSalesTaxTools asks for archived taxes too when includeArchived is set",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools lists transactions with filters and shapes accounts to wave_list_accounts ids",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools creates a deposit by debiting the bank account and crediting the category",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools creates a withdrawal the other way round, and skips the account lookup for relay ids",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools matches a system account without a classicId by its unique name",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools rejects an account id wave_list_accounts would not give",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools updates the description with the current sequence and leaves the lines alone",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools rebuilds the single line, keeping its tags, when the amount changes",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools refuses line changes on a split transaction",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "transaction tools deletes with the given sequence without reading first",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "tag tools lists tags with the page-number pagination Wave wants",
+    "status": "passed"
+  },
+  {
+    "file": "src/tools/transactions.test.ts",
+    "name": "tag tools creates and deletes a tag",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "isLoopback accepts localhost, 127.x and ::1",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "isLoopback rejects everything else",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "hostnameOf strips the port and keeps IPv6 brackets",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv defaults to 127.0.0.1:8765 with no token",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv reads the variables",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv refuses a non-loopback bind without a token",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv refuses a bad port",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv with WAVE_MCP_HTTP_TOKEN_FILE reads and trims the token from the file",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv with WAVE_MCP_HTTP_TOKEN_FILE satisfies the non-loopback rule like the plain variable",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv with WAVE_MCP_HTTP_TOKEN_FILE rejects an empty file",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv with WAVE_MCP_HTTP_TOKEN_FILE names the path when the file cannot be read",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "httpOptionsFromEnv with WAVE_MCP_HTTP_TOKEN_FILE refuses both forms at once",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "isAuthorized passes everything when no token is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "isAuthorized requires the exact bearer token when one is configured",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp rejects requests without the bearer token",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp opens a session on initialize when the token matches",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp rejects a non-initialize request with no session",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp rejects a body over 1 MiB",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp rejects a foreign Host header (DNS rebinding)",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp accepts a loopback Host on another port and in another case (tunnels, proxies)",
+    "status": "passed"
+  },
+  {
+    "file": "src/transports/http.test.ts",
+    "name": "startHttp always delivers the 413, even when the client is still sending",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/cli-command.test.ts",
+    "name": "cliCommand points at the built server when run as node dist/server.js",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/cli-command.test.ts",
+    "name": "cliCommand quotes a path the shell would split",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/cli-command.test.ts",
+    "name": "cliCommand resolves a symlinked server.js to the real file",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/cli-command.test.ts",
+    "name": "cliCommand keeps npx for the installed bin",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/cli-command.test.ts",
+    "name": "cliCommand falls back to npx for any other launcher",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/dates.test.ts",
+    "name": "todayIso formats the local calendar day, not the UTC one",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/dates.test.ts",
+    "name": "todayIso defaults to now",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/dates.test.ts",
+    "name": "addDays adds days across month and year ends",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/dates.test.ts",
+    "name": "addDays rejects anything that is not YYYY-MM-DD",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/env.test.ts",
+    "name": "optionalEnv returns the value when set",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/env.test.ts",
+    "name": "optionalEnv returns undefined when unset and no fallback is given",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/env.test.ts",
+    "name": "optionalEnv returns the fallback when unset",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/env.test.ts",
+    "name": "optionalEnv returns the fallback when empty string",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log writes info messages to stderr at default level",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log includes structured fields when provided",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log suppresses debug messages by default",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log emits debug when WAVE_MCP_LOG_LEVEL=debug",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log error level always emits",
+    "status": "passed"
+  },
+  {
+    "file": "src/util/log.test.ts",
+    "name": "log falls back to \"info\" threshold when WAVE_MCP_LOG_LEVEL is garbage",
+    "status": "passed"
+  }
+]

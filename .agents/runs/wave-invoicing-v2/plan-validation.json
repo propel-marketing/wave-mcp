@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "tasks": 129,
+  "work_sections": 62,
+  "paired_reviews": 62,
+  "stage_tasks": 5,
+  "setup_stages_completed": [
+    "task-orchestration:convert-to-spec",
+    "task-orchestration:convert-to-tasks",
+    "task-orchestration:plan-markdown"
+  ],
+  "implementation_tasks_started": 0,
+  "external_audit_hold": "p0-audit-gate",
+  "every_future_task_reachable_from_hold": true,
+  "dependencies_acyclic": true,
+  "paired_reviews_before_consumers": true,
+  "max_declared_outputs": 3,
+  "inherited_case_map_identical": true,
+  "inherited_tests": 486,
+  "core_files_byte_identical": 246,
+  "inherited_files_byte_preserved": 135,
+  "limits_by_category": {
+    "L": 23,
+    "N": 12,
+    "A": 11,
+    "D": 5
+  },
+  "modified_inherited_paths": [
+    ".gitignore",
+    "package-lock.json",
+    "package.json"
+  ],
+  "residuals": [
+    "bootstrap commit attempted exit1: inherited Wave precommit guard rejects2synthetic ADW bearer canaries; no bypass/test change; push not attempted because commit absent",
+    "no written Coordinator plan approval",
+    "current-vault protocol freshness unverified; supplied agency copies disclosed",
+    "inherited app and dev-provenance advisories gated for later remediation",
+    "optional Claude compatibility/semantic embeddings not installed",
+    "repository AGENTS.md project prefix edit approval timed out; no retry, upstream core instruction bytes retained"
+  ]
+}

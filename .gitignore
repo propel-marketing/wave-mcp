@@ -49,7 +49,21 @@ NOTES.md
 # `docs/` documents Wave's internal endpoints + verbatim GraphQL queries we
 # captured during development. Useful reference for you, sensitive if leaked
 # (could be used to abuse Wave's internal API). Kept out of git deliberately.
-docs/
+docs/*
+!docs/planning/
+docs/planning/*
+!docs/planning/v1/
+!docs/planning/v2/
+
+# ADW local databases and mutable runtime receipts are never publication inputs.
+.agents/data/
+.agents/active-plans.json
+.agents/runs/*/task-list.json
+.agents/runs/*/agent-outputs/*/
+!.agents/runs/*/agent-outputs/planner/
+.agents/runs/*/agent-outputs/planner/*
+!.agents/runs/*/agent-outputs/planner/00_intake_manifest.md
+!.agents/runs/*/agent-outputs/planner/01_phase_structure.md
 
 
 # ─── Python (gateway/) ───────────────────────────────────────────────────────
